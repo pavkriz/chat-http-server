@@ -25,7 +25,7 @@ public class UhkAuthenticator {
 
         try {
             HttpResponse response = client.execute(
-                    new HttpGet("https://stag-demo.uhk.cz/ws/services/rest2/help/getStagUserListForActualUser"));
+                    new HttpGet("https://stagws.uhk.cz/ws/services/rest2/help/getStagUserListForActualUser"));
             int statusCode = response.getStatusLine().getStatusCode();
             return statusCode == 200;
         } catch (IOException e) {
